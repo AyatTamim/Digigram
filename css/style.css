@@ -913,6 +913,9 @@ body {
   .card, .newsCards .newsCard {
     width: auto;
   }
+  .personImage {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 1264px) {
   :root p,
