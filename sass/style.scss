@@ -83,8 +83,14 @@ body {
   .personImage {
     width: 30%;
   }
-
-  
+  html:lang(ar) {
+    .card {
+      width: auto;
+    }
+    .personImage {
+      width: 30%;
+    }
+  }
 }
 @media screen and (max-width: 1264px) {
   :root {
