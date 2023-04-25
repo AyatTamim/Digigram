@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "./common/variables";
+@import "./common/mixins";
+@import "./views/home_page";
+@import "./views/about_page";
+@import "./views/services_page";
+@import "./views/reviews_page";
+@import "./views/contact_page";
+@import "./views/news_page";
+@import "./views/footer_page";
+
+html:lang(ar) {
+  direction: rtl;
+  .nav_bar .left_button {
+    margin-left: 5rem;
+  }
+
+  div,
+  p,
+  span {
+    @include textAlign(right);
+  }
+}
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.form-control:focus {
+  color: $secondary-color;
+  background-color: var(--bs-body-bg);
+  border-color: $secondary-color;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(108, 85, 249, 0.25);
+}
+@media screen and (max-width: 420px) {
+  :root {
+    font-size: 11px;
+  }
+  img {
+    width: 100%;
+  }
+  .About {
+    margin-bottom: 110px;
+  }
+  .reviews {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .getintouch_icon {
+    flex-direction: column;
+  }
+  .top_btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .left_btn {
+    margin-inline-end: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .card {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1264px) {
+  :root {
+    p,
+    div,
+    span {
+      text-align: center;
+    }
+  }
+  html:lang(ar) {
+    div,
+    p,
+    span {
+      @include textAlign(center);
+    }
+    .watch_btn {
+      justify-content: center;
+    }
+    .details_btn {
+      justify-content: center;
+    }
+    .newsCards {
+      flex-wrap: wrap;
+    }
+
+    .mdash {
+      margin: auto;
+    }
+    .third_praghraphp1,
+    .third_praghraphp2 {
+      text-align: left;
+    }
+  }
+  .details_btn {
+    justify-content: center;
+  }
+  .newsCards {
+    flex-wrap: wrap;
+  }
+
+  .mdash {
+    margin: auto;
+  }
+  .third_praghraphp1,
+  .third_praghraphp2 {
+    text-align: left;
+  }
+  .aboutPage .about_image img,
+  .servicesPage .about_image img,
+  .newsPage .about_image img,
+  .contactusPage .about_image img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,116 @@
+html {
+  direction: ltr;
+  font-family: $main-font;
+}
+* {
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+.nav_bar {
+  padding: 1rem;
+  box-shadow: 0 0 4px 0 #b4b2c54a, 0 0 4px 0 #b4b2c54a;
+  text-align: center;
+  display: flex;
+  background-color: white;
+  --bs-bg-opacity: none;
+  padding-right: 10rem;
+  .active {
+    transform: translate(0, 0);
+    animation-duration: 0s;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: $main-color;
+  }
+  .digi {
+    color: $third-color;
+    font-weight: 700;
+  }
+  .gram {
+    color: $main-color;
+    font-weight: 700;
+    padding-right: 2rem;
+  }
+  a:hover {
+    color: $main-color;
+    text-decoration: $link-hover-decoration;
+    transform: translatey(10px);
+    transition: transform 1s ease-out, visibility 1s;
+  }
+  ul li a {
+    color: $secondary-color;
+    text-transform: capitalize;
+  }
+  .left_btn {
+    margin-inline-start: auto;
+  }
+  .left_button {
+    color: $third-color;
+    background-color: white;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    text-transform: capitalize;
+    @include border(1px #d7d5e9);
+    @include border_radius(20px);
+    cursor: pointer;
+    text-align: center;
+    display: block;
+  }
+}
+.second_praghraph {
+  @include vertical_margin;
+  p {
+    text-transform: capitalize;
+    @include textAlign(left);
+  }
+  .praghraph_one {
+    font-size: 2rem;
+  }
+  .praghraph_two {
+    color: $secondary-color;
+  }
+  .info {
+    @include squared_button;
+    width: 30%;
+  }
+  .info:hover {
+    @include squaredbutton_hovercase;
+    width: 30%;
+  }
+
+  .watch_video {
+    @include oval_button;
+    .fa-circle-play {
+      color: $main-color;
+    }
+  }
+}
+
+.watch_video:hover {
+  @include ovalbutton_hovercase;
+  .fa-circle-play {
+    background-color: none;
+    border: none;
+    color: white;
+  }
+}
+
+.line {
+  @include horizotal_line;
+}
+.thirdpraghraph_container {
+  @include vertical_margin;
+  .third_praghraph {
+    text-transform: capitalize;
+    line-height: 25px;
+    .third_praghraphp1 {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .third_praghraphp2 {
+      font-size: 0.8rem;
+      color: $secondary-color;
+      line-height: 20px;
+      font-weight: 500;
+    }
+  }
+}

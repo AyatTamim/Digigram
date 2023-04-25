@@ -1,0 +1,138 @@
+.services {
+  @extend .About;
+  @include mirror_verticalmargin;
+  .ready_to {
+    color: $main-color;
+  }
+  .mdash {
+    @include m-dash;
+  }
+  .details {
+    @include squared_button;
+    width: 30%;
+  }
+  .details:hover {
+    @include squaredbutton_hovercase;
+    width: 30%;
+  }
+  .pricing {
+    @include oval_button;
+  }
+  .pricing:hover {
+    @include ovalbutton_hovercase;
+  }
+}
+.choose_us {
+  text-align: center;
+  line-height: 25px;
+  .choose_usp1 {
+    color: #8b87a6;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .choose_usp2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .mdash {
+    @include m-dash;
+    margin: auto;
+  }
+  @include vertical_margin;
+}
+.performane {
+  text-align: center;
+  .geometric_pattern {
+    padding-bottom: 15px;
+    margin: auto;
+    width: 52.6647pt;
+  }
+  line-height: 30px;
+  .high_performance {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .lorem_performance {
+    color: $secondary-color;
+    font-size: 1.1rem;
+  }
+}
+.line {
+  @include vertical_margin;
+  @include horizotal_line;
+}
+.pricing_plane {
+  .pricing_planep1 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  .mdash {
+    @include m-dash;
+    margin: auto;
+  }
+  text-align: center;
+  @include vertical_margin;
+}
+.cards {
+  .card:hover {
+    box-shadow: 0 0 8px #05153f;
+    background-color: #6c55f9;
+    transition: background-color 1s ease-in-out;
+    .cardp1 {
+      color: #fac14d;
+    }
+    .cardp3,
+    .cardp2 {
+      color: white;
+    }
+  }
+  .card {
+    @include border(1px #e9e8f5b5);
+    @include border_radius(20px);
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 4px 4px 10px #0b0b0b1a;
+    @include vertical_padding;
+    .cardp1 {
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      color: $secondary-color;
+    }
+    .cardp2 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .cardp3 {
+      text-transform: capitalize;
+      color: #8b87a6;
+    }
+    .choose_plane {
+      color: #8b87a6;
+      background-color: white;
+      padding: 0.6rem 1rem 0.6rem 1rem;
+      text-transform: capitalize;
+      @include border(0px #d7d5e9);
+      @include border_radius(20px);
+      transition: background-color 1s ease-in-out;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  @include vertical_margin;
+}
+.servicesPage {
+  .services{
+    @include vertical_margin;
+  }
+  .about_image {
+    img {
+      width: 1100px;
+      height: 400px;
+      @include border_radius(20px);
+    }
+  }
+}

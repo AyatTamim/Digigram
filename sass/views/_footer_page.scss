@@ -1,0 +1,96 @@
+footer {
+  @include vertical_margin;
+
+  .footer_content {
+    line-height: 2rem;
+    text-transform: capitalize;
+    color: $secondary-color;
+  }
+  .footer_content * {
+    @include textAlign(left);
+  }
+  .quick_links div:first-of-type,
+  .about_us div:first-of-type,
+  .subscrib div:first-of-type {
+    color: $third-color;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  .digi_gram {
+    .digi2 {
+      color: $third-color;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .gram2 {
+      color: #6c55f9;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .mail a,
+    .telephone_nmber a {
+      color: $main-color;
+      text-decoration: none;
+    }
+    * {
+      font-size: 0.9rem;
+    }
+  }
+  .quick_links,
+  .about_us,
+  .subscrib {
+    * {
+      font-size: 0.9rem;
+    }
+  }
+
+  .subscrib {
+    .last_input {
+      border: solid 1px #8b87a6;
+      border-radius: 5px;
+      padding: 0.7rem;
+      outline: 0;
+    }
+    .socilamedia_icons span {
+      margin-top: 1rem;
+      width: 40px;
+      height: 40px;
+      background-color: $grey-background;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 50%;
+    }
+  }
+}
+.copy_right {
+  @include vertical_margin;
+  color: $secondary-color;
+  text-transform: capitalize;
+  .MACode {
+    color: $main-color;
+  }
+  .copyright_content {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: $main-color;
+    }
+  }
+  .top_btn {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #e9e9f0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+}

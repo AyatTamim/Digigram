@@ -1,0 +1,34 @@
+.reviews {
+  background-color: $grey-background;
+  @include vertical_margin;
+  @include vertical_padding;
+  .review {
+    @include vertical_padding;
+}
+  .reviewp1 {
+    @include textAlign(left);
+    color: $secondary-color;
+    text-transform: capitalize;
+  }
+  .person_2 img {
+    @include border-radius(20px);
+    width: 70%;
+  }
+}
+
+.persons {
+  display: none;
+}
+.personImage {
+  @include border-radius(20px);
+  width: 15%;
+}
+.review_paragraphs {
+  width: calc(100% / 3);
+}
+.carousel-inner .active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}

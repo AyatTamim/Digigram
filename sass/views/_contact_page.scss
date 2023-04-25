@@ -1,0 +1,75 @@
+.contact_us {
+  @include vertical_margin;
+  .getin_touch {
+    .getintouch_p1,
+    .drop-us {
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    .getintouch_p2,
+    .discription {
+      color: $secondary-color;
+    }
+    .mdash {
+      @include m-dash;
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
+      border: solid $secondary-color 1px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 50%;
+    }
+  }
+  .drop_us {
+    .mdash {
+      @include m-dash;
+    }
+    .contact-us {
+      text-transform: uppercase;
+      color: $secondary-color;
+    }
+    .drop-us {
+      text-transform: capitalize;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .contact_input {
+      .form-control input {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $third-color;
+        background-color: white;
+        background-clip: padding-box;
+        border: var(--bs-border-width) solid $secondary-color;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: var(--bs-border-radius);
+      }
+    }
+  }
+  .send_message {
+    @include oval_button;
+  }
+  .send_message:hover {
+    @include ovalbutton_hovercase;
+  }
+}
+
+.contactusPage {
+  .about_image {
+    img {
+      width: 1100px;
+      height: 400px;
+      @include border_radius(20px);
+    }
+  }
+}

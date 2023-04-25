@@ -1,0 +1,49 @@
+.About {
+  @extend .second_praghraph;
+  .praghraph_one {
+    font-weight: bold;
+    .dynamic {
+      color: $main-color;
+    }
+  }
+  .mdash {
+    @include m-dash;
+  }
+
+  .canvas_container {
+    text-transform: capitalize;
+    @include vertical_margin;
+    .mini_table {
+      border: solid #e9e8f5 1px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include vertical_padding;
+      .mini_table_p1 {
+        color: $secondary-color;
+        font-size: 1.1rem;
+      }
+      .mini_table_p2 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.aboutPage {
+  .About {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .reviews {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .about_image {
+    img {
+      width: 1100px;
+      height: 400px;
+      @include border_radius(20px);
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.our_news {
+  @extend .choose_us;
+  .our_newsp1 {
+    @extend .choose_usp1;
+  }
+  .our_newsp2 {
+    @extend .choose_usp2;
+    .News {
+      color: $main-color;
+    }
+  }
+  .mdash {
+    @include m-dash;
+  }
+}
+
+.newsCards {
+  @extend .cards;
+  .newsCard {
+    @extend .card;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 400;
+    @include textAlign(left);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    line-height: 30px;
+
+    img {
+      border-radius: 50%;
+      width: 65px;
+    }
+    .newsCardp2 {
+      color: $secondary-color;
+    }
+    .newsCardp2 {
+      font-size: 0.9rem;
+      line-height: 15px;
+    }
+    .newsCardp5 {
+      font-size: 1.2rem;
+      color: $secondary-color;
+    }
+    .newsCardp4 {
+      padding-top: 50px;
+    }
+    .read_more {
+      border: none;
+      background: none;
+      text-transform: capitalize;
+      color: $main-color;
+    }
+    .firstread_more {
+      border: none;
+      background: none;
+      text-transform: capitalize;
+      color: $main-color;
+      padding-top: 78px;
+    }
+  }
+}
+.newsCard:hover {
+  color: white;
+  .read_more,
+  .firstread_more,
+  .newsCardp5,
+  .newsCardp2 {
+    color: white;
+  }
+}
+
+.discovermore_p {
+  text-align: center;
+  @include vertical_margin;
+}
+.discover_more {
+  @include oval_button;
+  margin: auto;
+  text-align: center;
+   a {
+    text-decoration: none;
+    color: #645f88;
+  }
+}
+
+.clients {
+  background-color: $grey-background;
+  @include vertical_padding;
+  .our_clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    .line {
+      @include horizotal_line;
+    }
+  }
+}
+.discover_more a:hover {
+  @include ovalbutton_hovercase;
+  width: max-content;
+}
+
+.newsPage {
+  .about_image {
+    img {
+      width: 1100px;
+      height: 400px;
+      @include border_radius(20px);
+    }
+  }
+}
