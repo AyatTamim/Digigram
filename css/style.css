@@ -889,9 +889,6 @@ body {
   .getintouch_icon {
     flex-direction: column;
   }
-  .top_btn {
-    display: none;
-  }
 }
 @media screen and (max-width: 768px) {
   .left_btn {
