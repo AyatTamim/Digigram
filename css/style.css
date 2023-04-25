@@ -876,6 +876,20 @@ body {
   :root {
     font-size: 11px;
   }
+  html:lang(ar) {
+    direction: rtl;
+  }
+  html:lang(ar) .nav_bar .left_button {
+    margin-left: 5rem;
+  }
+  html:lang(ar) div,
+  html:lang(ar) p,
+  html:lang(ar) span {
+    text-align: right;
+  }
+  html:lang(ar) .reviews .reviewp1 {
+    text-align: right;
+  }
   img {
     width: 100%;
   }
@@ -898,7 +912,6 @@ body {
 @media screen and (max-width: 992px) {
   .card, .newsCards .newsCard {
     width: auto;
-    height: auto;
   }
 }
 @media screen and (max-width: 1264px) {
@@ -921,9 +934,6 @@ body {
   html:lang(ar) .newsCards {
     flex-wrap: wrap;
   }
-  html:lang(ar) .mdash {
-    margin: auto;
-  }
   html:lang(ar) .third_praghraphp1,
   html:lang(ar) .third_praghraphp2 {
     text-align: left;
@@ -936,6 +946,7 @@ body {
   }
   .mdash {
     margin: auto;
+    margin-bottom: 1rem;
   }
   .third_praghraphp1,
   .third_praghraphp2 {

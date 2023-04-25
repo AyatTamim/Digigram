@@ -37,9 +37,25 @@ body {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(108, 85, 249, 0.25);
 }
+
 @media screen and (max-width: 420px) {
   :root {
     font-size: 11px;
+  }
+  html:lang(ar) {
+    direction: rtl;
+    .nav_bar .left_button {
+      margin-left: 5rem;
+    }
+
+    div,
+    p,
+    span {
+      @include textAlign(right);
+    }
+    .reviews .reviewp1 {
+      @include textAlign(right);
+    }
   }
   img {
     width: 100%;
@@ -54,7 +70,7 @@ body {
   .getintouch_icon {
     flex-direction: column;
   }
-  }
+}
 @media screen and (max-width: 768px) {
   .left_btn {
     margin-inline-end: auto;
@@ -63,7 +79,6 @@ body {
 @media screen and (max-width: 992px) {
   .card {
     width: auto;
-    height: auto;
   }
 }
 @media screen and (max-width: 1264px) {
@@ -90,9 +105,6 @@ body {
       flex-wrap: wrap;
     }
 
-    .mdash {
-      margin: auto;
-    }
     .third_praghraphp1,
     .third_praghraphp2 {
       text-align: left;
@@ -107,6 +119,7 @@ body {
 
   .mdash {
     margin: auto;
+    margin-bottom: 1rem;
   }
   .third_praghraphp1,
   .third_praghraphp2 {
